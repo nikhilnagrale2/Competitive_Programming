@@ -1,0 +1,11 @@
+#VSCodeFiles
+.vscode/
+.cph/
+
+#NotUsableFiles
+*.cpp.prob
+*.cpp.bin
+
+
+#Executables
+*.exe

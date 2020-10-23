@@ -11,7 +11,7 @@ int main()
     {
         long long n;
         cin >> n;
-        cout<<(n-1)/2<<endl;
+        cout << (n - 1) / 2 << endl;
     }
 
     return 0;

@@ -1,20 +1,22 @@
 //code by Nikhil Nagrale
 //nikhilnagrale2 on EveryPlatform
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int n,k;
-    cin>>n>>k;
-    int sum=0;
-    int ans=0;
-    for(int i=1;i<=n;i++){
-        sum+=(5*i);
-        if(sum+k>240)
-        break;
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    int sum = 0;
+    int ans = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        sum += (5 * i);
+        if (sum + k > 240)
+            break;
         ans++;
     }
-    cout<<ans<<endl;
+    cout << ans << endl;
     return 0;
 }
 

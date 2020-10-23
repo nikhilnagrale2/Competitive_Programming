@@ -1,21 +1,26 @@
 //code by Nikhil Nagrale
 //nikhilnagrale2 on EveryPlatform
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     int n;
-    cin>>n;
-    while(n--){
+    cin >> n;
+    while (n--)
+    {
         string s;
-        cin>>s;
-        if(s.length()>10){
+        cin >> s;
+        if (s.length() > 10)
+        {
             string ans;
             ans.push_back(s.front());
-            ans+=to_string(s.length()-2);
-            ans+=s.back();
-            cout<<ans<<endl;
-        }else cout<<s<<endl;
+            ans += to_string(s.length() - 2);
+            ans += s.back();
+            cout << ans << endl;
+        }
+        else
+            cout << s << endl;
     }
     return 0;
 }

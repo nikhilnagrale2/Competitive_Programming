@@ -20,7 +20,7 @@ int main()
         for (int j = 0; j < n; j++)
         {
             if (i != j && v[i].first == v[j].second)
-            ans++;
+                ans++;
         }
     }
     cout << ans << endl;

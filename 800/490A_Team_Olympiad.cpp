@@ -7,25 +7,26 @@ int main()
 {
     int n;
     cin >> n;
-    int a[n];
+    int a[n] = {0};
+    map<int, int> mpp;
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
+        mpp[a[i]]++;
+    }
+    for (auto x : mpp)
+    {
+        if (x.second == 0)
+        {
+            cout << "0" << endl;
+            return 0;
+        }
     }
 
-    int ans = 0, police = 0;
-    for (auto x : a)
+    for (int i = 0; i < n; i++)
     {
-        if (x == -1 && police == 0)
-        {
-            if (!police)
-                ans++;
-            else
-                police--;
-        }
-        else
-            police += x;
+        if (a[i] == 1)
+            v[1]
     }
-    cout << ans << endl;
     return 0;
 }

@@ -13,6 +13,6 @@ int main()
         cin >> temp;
         s.insert(temp);
     }
-    cout<<4-s.size()<<endl;
+    cout << 4 - s.size() << endl;
     return 0;
 }

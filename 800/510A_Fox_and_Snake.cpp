@@ -13,20 +13,24 @@ int main()
         {
             if (i % 4 == 0)
             {
-                if(j==1) cout<<"#";
-                else cout <<".";
+                if (j == 1)
+                    cout << "#";
+                else
+                    cout << ".";
             }
             else if (i % 2 == 0)
             {
-                if(j==m) cout<<"#";
-                else cout <<".";
+                if (j == m)
+                    cout << "#";
+                else
+                    cout << ".";
             }
             else
             {
-                cout<<"#";
+                cout << "#";
             }
         }
-        cout<<endl;
+        cout << endl;
     }
     return 0;
 }

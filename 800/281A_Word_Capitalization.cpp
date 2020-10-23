@@ -1,12 +1,13 @@
 //code by Nikhil Nagrale
 //nikhilnagrale2 on EveryPlatform
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     string s;
-    cin>>s;
-    s[0]=toupper(s[0]);
-    cout<<s<<endl;
+    cin >> s;
+    s[0] = toupper(s[0]);
+    cout << s << endl;
     return 0;
 }

@@ -11,7 +11,7 @@ int main()
     for (int i = 0; i < p; i++)
     {
         int temp;
-        cin>>temp;
+        cin >> temp;
         s.insert(temp);
     }
     cin >> q;

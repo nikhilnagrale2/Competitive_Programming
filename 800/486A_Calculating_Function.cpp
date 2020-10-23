@@ -11,14 +11,14 @@ long long fun(long long n)
     {
         n /= 2;
         ans += (n * (n + 1));
-        ans -= n*n;
+        ans -= n * n;
     }
     else
     {
         n /= 2;
         ans += (n * (n + 1));
         n++;
-        ans -= n*n;
+        ans -= n * n;
     }
     return ans;
 }

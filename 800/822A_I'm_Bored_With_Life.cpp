@@ -7,9 +7,9 @@ int main()
 {
     long long a, b;
     cin >> a >> b;
-    long long ans=1;
+    long long ans = 1;
     for (int i = 1; i <= min(a, b); i++)
         ans *= i;
-    cout<<ans<<endl;
+    cout << ans << endl;
     return 0;
 }

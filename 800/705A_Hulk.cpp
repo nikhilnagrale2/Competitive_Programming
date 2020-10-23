@@ -1,23 +1,29 @@
 //code by Nikhil Nagrale
 //nikhilnagrale2 on EveryPlatform
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     int n;
-    cin>>n;
+    cin >> n;
     string s;
-    int i=0;
-    while(n--){
+    int i = 0;
+    while (n--)
+    {
         i++;
-        if(i%2!=0)
-            s+="I hate ";
-        else s+="I love ";
+        if (i % 2 != 0)
+            s += "I hate ";
+        else
+            s += "I love ";
 
-        if(n==0){
-            s+="it ";
-        }else s+="that ";
+        if (n == 0)
+        {
+            s += "it ";
+        }
+        else
+            s += "that ";
     }
-    cout<<s<<endl;
+    cout << s << endl;
     return 0;
 }

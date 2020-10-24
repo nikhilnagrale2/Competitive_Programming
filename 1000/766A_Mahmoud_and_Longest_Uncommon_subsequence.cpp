@@ -6,15 +6,11 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    string a,b;
     cin >> a >> b;
-    int ans = 0;
-    while (a <= b)
-    {
-        a *= 3;
-        b *= 2;
-        ans++;
-    }
-    cout << ans << endl;
+    if (a == b)
+        cout << -1 << endl;
+    else
+        cout << max(a.size(), b.size()) << endl;
     return 0;
 }

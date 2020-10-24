@@ -1,5 +1,6 @@
 //code by Nikhil Nagrale
 //nikhilnagrale2 on EveryPlatform
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,25 +9,21 @@ int main()
     int n;
     cin >> n;
     int a[n] = {0};
-    map<int, int> mpp;
+    vector<vector<int>> v(3);
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
-        mpp[a[i]]++;
+        if(a[i]==1) v[0].push_back(i+1);
+        if(a[i]==2) v[1].push_back(i+1);
+        if(a[i]==3) v[2].push_back(i+1);
     }
-    for (auto x : mpp)
-    {
-        if (x.second == 0)
-        {
-            cout << "0" << endl;
-            return 0;
+    int ans=min(v[0].size(),min(v[1].size(),v[2].size()));
+    cout<<ans<<endl;
+    if(ans){
+        for(int i=0;i<ans;i++){
+            cout<<v[0][i]<<" "<<v[1][i]<<" "<<v[2][i]<<endl;
         }
     }
-
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] == 1)
-            v[1]
-    }
+    
     return 0;
 }

@@ -16,3 +16,5 @@ int main()
     }
     return 0;
 }
+//max(a,b,c)
+//a+b+c-1

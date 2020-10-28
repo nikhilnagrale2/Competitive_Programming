@@ -18,29 +18,35 @@ int main()
 {
     int n;
     cin >> n;
-    string s;
-    set<char> count;
-    set<char> allcount;
+    char a[n][n];
     for (int i = 0; i < n; i++)
     {
-        cin >> s;
-        for (int j = 0; j < s.size(); j++)
+        cin >> a[i];
+    }
+
+    char c1 = a[0][0];
+    char c2 = a[0][1];
+
+    string ans = "YES";
+    if (c1 == c2)
+        ans = "NO";
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
         {
-            if (i == j || (i == n - j - 1))
-                count.insert(s[j]);
-            allcount.insert(s[j]);
+            if (i == j || i == n - 1 - j)
+            {
+                if (a[i][j] != c1)
+                    ans = "NO";
+            }
+            else
+            {
+                if (a[i][j] != c2)
+                    ans = "NO";
+            }
         }
     }
-    if (allcount.size() != 2)
-    {
-        cout << "NO" << endl;
-        return 0;
-    }
-    if (count.size() != 1)
-    {
-        cout << "NO" << endl;
-        return 0;
-    }
-    cout << "YES" << endl;
+    cout<<ans<<endl;
     return 0;
 }

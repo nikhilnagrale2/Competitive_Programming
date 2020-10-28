@@ -1,8 +1,4 @@
 /*
-    Problem Link    :   https://codeforces.com/problemset/problem/281/A
-    Contest Link    :   https://codeforces.com/contest/281/problem/A
-    Status          :   Accepted
-
     Author          :   Nikhil Nagrale
     Codeforces      :   https://codeforces.com/profile/nikhilnagrale2
     Codechef        :   https://www.codechef.com/users/nikhilnagrale2
@@ -14,11 +10,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int GCD(int a, int b)
+{
+    while (a)
+    {
+        b %= a;
+        a ^= b;
+        b ^= a;
+        a ^= b;
+    }
+    return b;
+}
+
+int Gcd(int a, int b)
+{
+    if (!a || !b)
+        return a + b;
+    return gcd(b, a % b);
+}
+
+int gCd(int a, int b)
+{
+    return !a ? b : gcd(b % a, a);
+}
+
 int main()
 {
-    string s;
-    cin >> s;
-    s[0] = toupper(s[0]);
-    cout << s << endl;
+    __gcd(a, b);
     return 0;
 }

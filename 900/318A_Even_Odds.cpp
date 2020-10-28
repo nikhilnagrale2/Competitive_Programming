@@ -1,6 +1,6 @@
 /*
-    Problem Link    :   https://codeforces.com/problemset/problem/61/A
-    Contest Link    :   https://codeforces.com/contest/61/problem/A
+    Problem Link    :   https://codeforces.com/problemset/problem/318/A
+    Contest Link    :   https://codeforces.com/contest/318/problem/A
     Status          :   Accepted
 
     Author          :   Nikhil Nagrale
@@ -16,16 +16,11 @@ using namespace std;
 
 int main()
 {
-    string a, b;
-    cin >> a >> b;
-    string v = "";
-    for (int i = 0; i < a.length(); i++)
-    {
-        if (a[i] == b[i])
-            v += "0";
-        else
-            v += "1";
-    }
-    cout << v << endl;
+    long long n, k;
+    cin >> n >> k;
+    if (k <= (n + 1) / 2)
+        cout << 2 * k - 1 << endl;
+    else
+        cout << 2 * (k - (n + 1) / 2) << endl;
     return 0;
 }

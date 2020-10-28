@@ -26,5 +26,7 @@ int main()
     }
     return 0;
 }
-//max(a,b,c)
-//a+b+c-1
+
+//  other possible solutions
+//  max(a,b,c)
+//  a+b+c-1

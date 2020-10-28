@@ -26,7 +26,8 @@ int main()
         v.push_back({before, after});
     }
 
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         if (v[i].first != v[i].second)
         {
             cout << "rated" << endl;
@@ -34,21 +35,29 @@ int main()
         }
     }
 
-    for(int i=0;i<n;i++){
-        for(int j=0;j<=i;j++){
-            if(v[i].first>v[j].first){
-                cout<<"unrated"<<endl;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            if (v[i].first > v[j].first)
+            {
+                cout << "unrated" << endl;
                 return 0;
             }
         }
     }
 
-    cout<<"maybe"<<endl;
+    cout << "maybe" << endl;
     return 0;
 }
 
-//o(n) solution is also possible
+// o(n) solution is also possible
 // used following loop for 2nd condition unrated
-//for(int i=0;i<n;i++){
-//  
-//}
+// for(int i=0;i<n-1;i++)
+// {
+//     if (v[i].first < a[i + 1].first)
+//     {
+//         cout << "unrated" << endl;
+//         return 0;
+//     }
+// }

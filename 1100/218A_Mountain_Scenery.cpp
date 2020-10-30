@@ -11,11 +11,15 @@
   Copyright       :   Solve it on your own.
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    
-    return 0;
+  int t;
+  cin >> t;
+  while (t--)
+  {
+  }
+  return 0;
 }

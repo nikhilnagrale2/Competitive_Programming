@@ -10,6 +10,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// USING BITS MANIPULATION
 int GCD(int a, int b)
 {
     while (a)
@@ -22,6 +23,7 @@ int GCD(int a, int b)
     return b;
 }
 
+// USING MODULO
 int Gcd(int a, int b)
 {
     if (!a || !b)
@@ -29,6 +31,7 @@ int Gcd(int a, int b)
     return gcd(b, a % b);
 }
 
+// SAME AS ABOVE
 int gCd(int a, int b)
 {
     return !a ? b : gcd(b % a, a);
@@ -36,6 +39,7 @@ int gCd(int a, int b)
 
 int main()
 {
+    //STL FUNCTION FOR GCD
     __gcd(a, b);
     return 0;
 }

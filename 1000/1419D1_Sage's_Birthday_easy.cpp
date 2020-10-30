@@ -49,5 +49,5 @@ int main()
 
 // can be solved by binary search on answer method
 /*
-
+https://pastebin.com/8zJPxg21 
 */

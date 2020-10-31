@@ -20,7 +20,8 @@ sum= n*(n+1)/2
 */
 
 /*
-
+summation of n numbers
+sum= n*(n-1)/2
 */
 
 /**/

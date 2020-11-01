@@ -37,25 +37,21 @@ int main()
             {
                 long long median = 0;
                 // pdn refers to palindrome numbers
-                set<long long> pdn;
-                pdn.insert(a[i][j]);
-                pdn.insert(a[i][m - j - 1]);
-                pdn.insert(a[n - 1 - i][j]);
-                pdn.insert(a[n - 1 - i][m - j - 1]);
+                vector<long long> pdn;
+                pdn.push_back(a[i][j]);
+                if (j != m - j - 1)
+                    pdn.push_back(a[i][m - 1 - j]);
 
-                if (pdn.size() == 1)
-                    continue;
-
-                int q = 0;
-                for (auto k : pdn)
+                if (i != n - 1 - i)
                 {
-                    if (q == 1)
-                        median = k;
-                    q++;
+                    pdn.push_back(a[n - 1 - i][j]);
+                    if (j != m - 1 - j)
+                        pdn.push_back(a[n - 1 - i][m - 1 - j]);
                 }
-
-                for (auto k : pdn)
-                    ans += abs(median - k);
+                sort(pdn.begin(), pdn.end());
+                median = pdn[pdn.size() / 2];
+                for (auto x : pdn)
+                    ans += abs(x - median);
             }
         }
         cout << ans << endl;

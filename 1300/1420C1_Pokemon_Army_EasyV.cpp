@@ -21,9 +21,7 @@ int main()
   while (t--)
   {
     int n, q;
-    jb
-            cin >>
-        n >> q;
+    cin >> n >> q;
     vector<int> a(n);
   }
   return 0;

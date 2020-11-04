@@ -1,6 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/problemset/problem/1204/A
-  Contest Link    :   https://codeforces.com/contest/1204/problem/A
+  Problem Link    :   https://codeforces.com/problemset/problem/950/B
+  Contest Link    :   https://codeforces.com/contest/950/problem/B
   Status          :   Accepted
 
   Author          :   Nikhil Nagrale
@@ -16,6 +16,14 @@ using namespace std;
 
 int main()
 {
+    int n, m;
+    cin >> n >> m;
+    vector<int> x(n), y(m);
 
-	return 0;
+    for (int i = 0; i < n; i++)
+        cin >> x[i];
+    for (int i = 0; i < n; i++)
+        cin >> y[i];
+
+        return 0;
 }

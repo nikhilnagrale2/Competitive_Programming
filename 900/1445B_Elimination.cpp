@@ -1,6 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/problemset/problem/1204/A
-  Contest Link    :   https://codeforces.com/contest/1204/problem/A
+  Problem Link    :   https://codeforces.com/problemset/problem/1445/B
+  Contest Link    :   https://codeforces.com/contest/1445/problem/B
   Status          :   Accepted
 
   Author          :   Nikhil Nagrale
@@ -16,6 +16,13 @@ using namespace std;
 
 int main()
 {
-
-	return 0;
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int a, b, c, d;
+        cin >> a >> b >> c >> d;
+        cout << max(a + b, c + d) << endl;
+    }
+    return 0;
 }

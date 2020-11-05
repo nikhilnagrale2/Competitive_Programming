@@ -16,14 +16,14 @@ using namespace std;
 
 int main()
 {
-    int n, m;
-    cin >> n >> m;
-    vector<int> x(n), y(m);
+	int n, m;
+	cin >> n >> m;
+	vector<int> x(n), y(m);
 
-    for (int i = 0; i < n; i++)
-        cin >> x[i];
-    for (int i = 0; i < n; i++)
-        cin >> y[i];
+	for (int i = 0; i < n; i++)
+		cin >> x[i];
+	for (int i = 0; i < n; i++)
+		cin >> y[i];
 
-        return 0;
+	return 0;
 }

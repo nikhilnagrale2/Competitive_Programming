@@ -31,7 +31,7 @@ int main()
             cin >> b[i];
 
         //  You can also take input directly in vector of pairs.
-        //  I added it after because it will be easier to understand for beginners.
+        //  I added it later because it will be easier to understand for beginners.
         for (int i = 0; i < n; i++)
         {
             vp.push_back({a[i], b[i]});
@@ -174,6 +174,48 @@ signed main()
             }
         }
         cout << ans << endl;
+    }
+    return 0;
+}
+*/
+/*
+Binary Search On Answer
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define FOR(i, n) for (int i = 0; i < n; i++)
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        pair<int, int> p[n];
+        FOR(i, n)
+            cin >> p[i].first;
+        FOR(i, n)
+            cin >> p[i].second;
+
+        long long l = 0, r = 1000000000;
+
+        while (l < r)
+        {
+            long long m = (l + r) / 2;
+
+            long long s = 0;
+            for (int i = 0; i < n; i++)
+                if (p[i].first > m)
+                    s += p[i].second;
+            if (s <= m)
+                r = m;
+            else
+                l = m + 1;
+        }
+        cout << l << endl;
     }
     return 0;
 }

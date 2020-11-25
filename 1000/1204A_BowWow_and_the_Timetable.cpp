@@ -16,6 +16,18 @@ using namespace std;
 
 int main()
 {
+	string s;
+	cin >> s;
+	long long sum = 0;
+	for (auto x : s)
+		if (x)
+			sum++;
+	if (count(s.begin(), s.end(), '1') > 1)
+		cout << (s.length() + 1) / 2 << endl;
+	else if (!count(s.begin(), s.end(), '1'))
+		cout << 0 << endl;
+	else
+		cout << s.length() / 2 << endl;
 
 	return 0;
 }

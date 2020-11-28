@@ -5,7 +5,7 @@
 #NotUsableFiles
 *.cpp.prob
 *.cpp.bin
-
+*.bin
 
 #Executables
 *.exe

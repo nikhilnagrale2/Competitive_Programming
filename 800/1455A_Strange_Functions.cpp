@@ -1,6 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/problemset/problem/129/B
-  Contest Link    :   https://codeforces.com/contest/129/problem/B
+  Problem Link    :   https://codeforces.com/problemset/problem/1455/A
+  Contest Link    :   https://codeforces.com/contest/1455/problem/A
   Status          :   Accepted
 
   Author          :   Nikhil Nagrale
@@ -11,17 +11,18 @@
   Copyright       :   Study and Solve. :) 
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    int n,m;
-    cin>>n>>m;
-    for(int i=0;i<m;i++){
-        int a,b;
-        cin>>a>b;
-        
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        string n;
+        cin >> n;
+        cout << n.size() << endl;
     }
     return 0;
 }

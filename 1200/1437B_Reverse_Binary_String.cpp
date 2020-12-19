@@ -28,26 +28,16 @@ int main()
             cout << 0 << endl;
         else
         {
-            int ans1 = 0;
-            int ans2 = 0;
+            int consecutive = 0;
             for (int i = 0; i < n - 1; i++)
             {
                 if (s[i] == s[i + 1])
                 {
-                    if (s[i] == '1')
-                        ans1++;
-                    else
-                        ans2++;
+                    consecutive++;
                 }
             }
-            cout << max(ans1, ans2) << endl;
+            cout << (consecutive + 1) / 2 << endl;
         }
     }
     return 0;
 }
-
-/*
-    Another solution
-
-    cout<<((ans1+ans2)+1)/2<<endl;
-*/

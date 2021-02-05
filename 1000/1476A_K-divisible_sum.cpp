@@ -37,3 +37,19 @@ int main()
     }
     return 0;
 }
+
+/*
+Easier (Shorter)Implementation
+
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        long long n, k;
+        cin >> n >> k;
+        long long cf=(n+k-1)/k;
+        long long sum=cf*k;
+        cout<<(sum+n-1)/n<<endl;
+    }
+
+*/

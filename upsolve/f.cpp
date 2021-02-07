@@ -1,8 +1,4 @@
 /*
-  Problem Link    :   https://codeforces.com/problemset/problem/1/A
-  Contest Link    :   https://codeforces.com/contest/1/problem/A
-  Status          :   Accepted
-
   Author          :   Nikhil Nagrale
   Codeforces      :   https://codeforces.com/profile/nikhilnagrale2
   Codechef        :   https://www.codechef.com/users/nikhilnagrale2

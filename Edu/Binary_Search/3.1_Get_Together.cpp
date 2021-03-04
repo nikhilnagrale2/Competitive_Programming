@@ -1,6 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/problemset/problem/579/A
-  Contest Link    :   https://codeforces.com/contest/579/problem/A
+  Problem Link    :   https://codeforces.com/edu/course/2/lesson/6/3/practice/contest/285083/problem/A
+  Contest Link    :   https://codeforces.com/edu/course/2/lesson/6/3/practice
   Status          :   Accepted
 
   Author          :   Nikhil Nagrale
@@ -16,8 +16,6 @@ using namespace std;
 
 int main()
 {
-    int x;
-    cin >> x;
-    cout << __builtin_popcount(x) << endl;
+
     return 0;
 }

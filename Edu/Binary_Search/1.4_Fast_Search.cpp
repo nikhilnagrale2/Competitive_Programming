@@ -1,5 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/D
+  Problem Link    :
+  https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/D
   Contest Link    :   https://codeforces.com/edu/course/2/lesson/6/1/practice
   Status          :   Accepted
 
@@ -8,62 +9,49 @@
   Codechef        :   https://www.codechef.com/users/nikhilnagrale2
   Github          :   https://github.com/nikhilnagrale2
 
-  Copyright       :   Study and Solve. :) 
+  Copyright       :   Study and Solve. :)
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int BinarySearchL(vector<int> &a, int x)
-{
+int BinarySearchL(vector<int> &a, int x) {
     int l = -1, r = a.size();
-    while (r > l + 1)
-    {
+    while (r > l + 1) {
         int m = (l + r) / 2;
-        if (a[m] <= x)
-        {
+        if (a[m] <= x) {
             l = m;
-        }
-        else
-        {
+        } else {
             r = m;
         }
     }
     return l;
 }
 
-int BinarySearchR(vector<int> &a, int x)
-{
+int BinarySearchR(vector<int> &a, int x) {
     int l = -1, r = a.size();
-    while (r > l + 1)
-    {
+    while (r > l + 1) {
         int m = (l + r) / 2;
-        if (a[m] < x)
-        {
+        if (a[m] < x) {
             l = m;
-        }
-        else
-        {
+        } else {
             r = m;
         }
     }
     return r;
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
     vector<int> a(n);
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
     sort(a.begin(), a.end());
     int k;
     cin >> k;
-    for (int i = 0; i < k; i++)
-    {
+    for (int i = 0; i < k; i++) {
         int x, y;
         cin >> x >> y;
 

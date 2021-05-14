@@ -1,5 +1,6 @@
 /*
-  Problem Link    :   https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/A
+  Problem Link    :
+  https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/A
   Contest Link    :   https://codeforces.com/edu/course/2/lesson/6/1/practice
   Status          :   Accepted
 
@@ -8,50 +9,38 @@
   Codechef        :   https://www.codechef.com/users/nikhilnagrale2
   Github          :   https://github.com/nikhilnagrale2
 
-  Copyright       :   Study and Solve. :) 
+  Copyright       :   Study and Solve. :)
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
     int n, k;
     cin >> n >> k;
     vector<int> a(n);
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    for (int i = 0; i < k; i++)
-    {
+    for (int i = 0; i < k; i++) {
         int x;
         cin >> x;
         int l = 0, r = n - 1;
         bool ok = false;
-        while (r >= l)
-        {
+        while (r >= l) {
             int m = (l + r) / 2;
-            if (a[m] == x)
-            {
+            if (a[m] == x) {
                 ok = true;
                 break;
-            }
-            else if (a[m] < x)
-            {
+            } else if (a[m] < x) {
                 l = m + 1;
-            }
-            else
-            {
+            } else {
                 r = m - 1;
             }
         }
-        if (ok)
-        {
+        if (ok) {
             cout << "YES\n";
-        }
-        else
-        {
+        } else {
             cout << "NO\n";
         }
     }
